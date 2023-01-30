@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(tidyverse)
  
-weather <- read_csv('data/weather.csv')
+weather <- read_csv('weather-1.csv')
 View(weather)
 ```
 
@@ -29,6 +29,12 @@ What are the problems?
 
 weather_1 <- gather(weather, key = 'day', value = 'temp', 5:35)
 View(weather_1)
+# what are the arguements
+# Dataset, 
+# write down in order what you think is happening
+# Getting dataset, getting a column title, getting another column title, then getting what rows to take that data from to put under those new headings
+# what other arguements might be useful
+# na.rm
 
 ```
 

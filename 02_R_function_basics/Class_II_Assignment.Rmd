@@ -60,7 +60,8 @@ Also you can work with your groups for coding tips/advise or work through simila
 
 Loading and preparing the data 
 ```{r}
-admit_2 <- read_csv("data/LogReg.csv")
+##admit_2 <- read_csv("data/LogReg.csv") ORIGINAL LINE
+admit_2 <- read_csv("LogReg-1.csv")
 
 str(admit_2)#str is short for structure and provides a overview of the data
 #What do you see here?
@@ -96,6 +97,10 @@ x2
 x3 <- arrange(x2,desc(`mean(gpa)`))# Arrange by rank descending 
 print(x3)
 ## Are there differences in the admitted number of students on average by GPA and school rank?
+
+# 16 components
+# 3 functions in each data set
+# 
 
 ```
 

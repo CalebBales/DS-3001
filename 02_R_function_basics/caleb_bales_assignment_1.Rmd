@@ -1,0 +1,38 @@
+---
+title: "caleb_bales_assignment_1"
+author: "Caleb Bales"
+date: '2023-01-30'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## DS 3001 Assignment 1
+## Caleb Bales
+
+```{r}
+library(tidyverse)
+```
+
+## Data Set 1
+
+```{r}
+nfl_df = read_csv("nfl2008_fga.csv")
+
+# Question 1
+
+# Question 2
+```
+
+## Data Set 2
+
+```{r}
+demographic_df = read_csv("DEMOGRAPHIC_INDICATORS_COMPACT_REV1.csv")
+
+# Question 1
+
+# Question 2
+```
+
