@@ -1,0 +1,99 @@
+---
+title: "Data Science in Gaming"
+author: "Caleb Bales"
+date: '2/13/2023'
+output:
+  html_document:
+    toc: TRUE
+    theme: simplex
+    toc_float: TRUE
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r setup, include=FALSE, cache=TRUE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r, include=FALSE}
+library(tidyverse)
+library(knitr)
+library(plotly)
+library(DT)
+library(rmarkdown)
+```
+
+Date that the [article](https://medium.com/@-TutortAcademy/data-science-in-gaming-357c38c690cc) was published: **January 7, 2022**
+
+Written by: **Tutort Academy**
+
+![A relative infographic showing I know how to control height/width](https://media.licdn.com/dms/image/C4D12AQGbNQ2gPnhI4w/article-inline_image-shrink_1000_1488/0/1522856188835?e=1681948800&v=beta&t=xiFOQEF1DrzJtDvd_JoCUzfVPKBaWxWYbTBwZIeO_-Q){width=50%}
+
+### Summary of Article
+The main focus of this article is the role of Data Science in the industry of 
+one of my favorite hobbies, video games. Specifically, the article explains how
+the major players of the industry, such as EA, Sony, Microsoft, etc. have began
+to use data to improve the user's experience and engagement with their content. 
+Mainly these companies, along with many indie developers, utilize Artificial 
+Intelligence, Machine Learning, and Data Mining techniques to improve both players
+and developer enjoyment of games. 
+
+### One "Real World" Application
+One, "real-life use case," which the article describes is how machine learning
+and AI solve a problematic phenomenon in gaming known as, "Power Boosting." This
+is a tactic used frequently in online, multi-player games such as those in the 
+Call of Duty series. Essentially, one friend will purposely loose an online
+match because there is another friend on the opposing team. This leads to the 
+winning player increasing in rank/level even though they really didn't do anything. 
+This hurts the skill based matchmaking of most games, so ML models are implemented
+to detect which such "virtual crimes" occur. Mainly the variables these models look at
+are if the players are friends with each other, but not on the same team repeatedly, and
+if player deaths occur at the same location in rapid succession. 
+
+### Ethics of Data Science in Gaming
+
+One aspect which this article doesn't go into which I feel needs to be addressed,
+is the ethics behind Data Science in gaming. While many aspects of Data Science
+can improve this entertainment industry, such as the previously mentioned instance with preventing
+power boosting, there are also many ways which I see big data hurting gaming in general.
+One such way is the explosion of cheap, predatory mobile games which have came about 
+in recent years. 
+
+![A classic example of cheap mobile game ads](https://static1.thegamerimages.com/wordpress/wp-content/uploads/2020/04/mobile-game-scam-promo.jpeg?q=50&fit=contain&w=1140&h=570&dpr=1.5){width=50%}
+
+These games are usually advertised on social media platforms like Instagram, Tiktok,
+and many others. The reason these games are "predatory" are because they are teetering
+on the line of false advertisement and prey on addictive personalities. These games,
+such as in the lefthand section of the photo above, don't actually play as advertised. 
+Usually, the advertised game is a mini-game inside a worse quality, ad-packed game, and this
+is why false advertising has yet to catch up to these products, just by a loophole. 
+In fact, the companies behind these games use the data of players with addictive personalities
+to build the games for these adds in the first place. I do believe data science 
+does industries good 9 times out of 10, but I think it's also important to look out
+for that 1/10 occurence.
+
+### Relevance to My (Hopeful) Career
+This article has, at the very least, informed me on how the field of Data Science
+has been applied to one of my favorite hobbies. Unfortunately, even though I really
+like both Data Science and gaming, I don't think I'll be pursuing a career in game
+development as a Data Scientist. For one, the games industry is just under teachers
+in terms of unfair working conditions and lack of labor laws. Furthermore, I think that
+getting too close to my favorite hobby with my (hopeful) future profession as a 
+Software Developer/Data Analyst could perhaps take some of the wide-eyed wonder away.
+
+### Required Plots{.tabset}
+
+#### mtcars plot
+```{r,out.width='75%'}
+plot(mtcars$wt, mtcars$disp)
+```
+
+#### US Arrests DT
+```{r, echo=FALSE}
+DT::datatable(USArrests)
+```
+
+
+
+
