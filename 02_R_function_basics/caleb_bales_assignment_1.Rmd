@@ -22,8 +22,28 @@ library(tidyverse)
 nfl_df = read_csv("nfl2008_fga.csv")
 
 # Question 1
+# Are teams more likely to kick a field goal from farther away if they have home field advantage?
+
+# Pseudo Code for Q1
+# filter() on if it's the home team kicking (homekick == 1)
+# 
+#
+#
+
+nfl1 = nfl_df %>% 
+  select(kickteam, distance, homekick) %>%
+  Avg_home_dist =  filter(homekick == 1) %>%
+  Avg_home_dist = mean(distance)
+  group_by(kickteam) %>%
+  summarize(total_kicks = n(), home_kicks = sum(homekick==1), 
+            away_kicks = total_kicks - home_kicks)
+
+
 
 # Question 2
+# Which players scored the most field goals while playing away games and their teams losing at the time of the kick?
+
+# Pseudo Code for Q2
 ```
 
 ## Data Set 2
@@ -33,6 +53,10 @@ demographic_df = read_csv("DEMOGRAPHIC_INDICATORS_COMPACT_REV1.csv")
 
 # Question 1
 
+# Pseudo Code for Q1
+
 # Question 2
+
+# Pseudo Code for Q2
 ```
 
